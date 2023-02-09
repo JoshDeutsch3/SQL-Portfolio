@@ -1,0 +1,26 @@
+Create table Movies (id integer primary key, Name text, rating integer, release_date integer, studio text);
+
+INSERT INTO Movies VALUES
+(1, 'Lord of the Rings', 9, 2001, 'FOX'),
+(2, 'Boyz in the Hood', 5, 1996, 'Paramount'),
+(3, 'Glory', 8, 1998, 'Lifesytle'),
+(4, 'Halloween', 6, 1995, 'Disney'),
+(5, 'Top Gun:Maverick', 10, 2022, 'FOX'),
+(6, 'Little Rascals', 7, 1992, 'BBC'),
+(7, 'Forrest Gump', 9, 1997, 'ABC'),
+(8, 'Goonies', 4, 1988, 'Who Cares'),
+(9, 'Days of Thunder', 7, 1991, 'Studio D'),
+(10, 'Demolition Man', 8, 1998, 'NBC Studios');
+
+Select Name from Movies;
+
+What are the highest rated movies?
+Select name from movies order by Rating
+
+what release year has the highest rates moveies?
+Select release_date from movies order by Rating 
+
+WHat was the average rating for movies released in 1995?
+Select avg(Rating) 
+from movies
+where release_date = 1995
